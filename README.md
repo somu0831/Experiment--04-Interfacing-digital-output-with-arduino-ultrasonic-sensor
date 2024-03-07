@@ -35,9 +35,9 @@ distance to an object = ((speed of sound in the air)*time)/2
 speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR 
-## CIRCUIT DIAGRAM
+## CIRCUIT DIAGRAM:
 ![Screenshot 2024-03-07 111538](https://github.com/somu0831/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/162110820/b6ae2fc7-fd80-443c-b951-fc7f5162759b)
-## SCHEMATIC VIEW
+## SCHEMATIC DIAGRAM:
 ![Screenshot 2024-03-07 112047](https://github.com/somu0831/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/162110820/5d9833e6-0639-48c3-b261-a80411c174f9)
 
 
@@ -130,7 +130,7 @@ void loop()
 
 
 ### RESULTS
-
+ARUDINP UNO IS INTERFACED WITH ULTRASONIC SENSOR AND OUTPUT VALUES ARE INDICATED ON A GRAPH.
 
 
  
