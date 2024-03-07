@@ -35,9 +35,9 @@ distance to an object = ((speed of sound in the air)*time)/2
 speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR 
+![Screenshot 2024-03-07 111538](https://github.com/somu0831/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/162110820/b6ae2fc7-fd80-443c-b951-fc7f5162759b)
 
-
-![image](https://user-images.githubusercontent.com/36288975/166430594-5adb4ca9-5a42-4781-a7e6-7236b3766a85.png)
+![Screenshot 2024-03-07 112047](https://github.com/somu0831/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/162110820/5d9833e6-0639-48c3-b261-a80411c174f9)
 
 
 
@@ -56,6 +56,47 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### PROGRAM 
 
+~~~
+const int trigger = 10;
+const int echopin=9;
+int red = 7;
+int green = 6;
+long duration ; 
+float distance;
+void setup()
+{
+  pinMode(trigger, OUTPUT);
+  pinMode(echopin, INPUT);
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+  Serial.begin(96000);
+}
+
+void loop()
+{
+  digitalWrite(trigger, LOW);
+  delay(20); // Wait for 20 millisecond(s)
+  digitalWrite(trigger, HIGH);
+  delay(20); // Wait for 20 millisecond(s)
+  digitalWrite(trigger, LOW);
+  duration = pulseIn(echopin,HIGH);
+  distance = duration * (0.034/2);
+  Serial.print(distance);
+  Serial.println("cms");
+  if(distance > 5) {
+    digitalWrite(red,HIGH);
+    delay(200);
+    digitalWrite(green,LOW);
+    delay(200);
+  }
+  else{
+    digitalWrite(red,LOW);
+    delay(200);
+    digitalWrite(green,HIGH);
+    delay(200);
+  }
+}
+~~~
 
 
 
