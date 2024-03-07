@@ -104,14 +104,13 @@ void loop()
 
 
 ### Distance vs measurement table 
+![image](https://github.com/somu0831/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/162110820/20a28ed8-d53f-44b2-8809-c05682e17783)
 
 			
  
 			
-			
-			
 
-![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
+
 
 			
 			
@@ -119,7 +118,9 @@ void loop()
 			
 			
 			Average error = sum/ number of readings 
- 
+ ## GRAPH
+ ![Screenshot 2024-03-07 112047](https://github.com/somu0831/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/162110820/cecff214-5e00-4f47-ac4f-66190cf9b0fc)
+
 
 
 
